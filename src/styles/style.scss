@@ -1,0 +1,61 @@
+body {
+  background-color: black;
+}
+.bground {
+  background-image: url("../images/bground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 90px 0 0 0;
+  width: 100%;
+  height: fit-content;
+}
+.container {
+  padding: 16px;
+}
+#search-form {
+  position: relative;
+}
+#search-form > .search-svg {
+  position: absolute;
+  top: 50%;
+  left: 65px;
+  transform: translate(-50%, -50%);
+}
+#search-input {
+  padding-left: 32px;
+}
+.movie-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+  margin: auto;
+  justify-content: center;
+}
+footer > p {
+  font-size: 12px;
+}
+
+/* Reponsive Breakpoint */
+@media screen and (max-width: 1024px) {
+  .movie-list {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/* Ukuran Tablet */
+@media screen and (max-width: 768px) {
+  .movie-list {
+    grid-template-columns: auto auto;
+  }
+  #search-form > .search-svg {
+    left: 17px;
+  }
+}
+
+/* Ukuran Mobile */
+@media screen and (max-width: 576px) {
+  .movie-list {
+    grid-template-columns: auto;
+  }
+}
